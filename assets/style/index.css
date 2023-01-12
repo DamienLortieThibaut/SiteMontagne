@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "MerryweatherLight";
+  src: url("../fonts/Merriweather-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/bg.jpg") center/cover fixed;
+  font-family: "MerryweatherLight", sans-serif;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  color: rgb(249, 249, 249);
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header .container h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+header .container p {
+  font-weight: 0;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 50px auto;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+header{
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    color: $color2;
+    .container{
+        @include center;
+        flex-direction: column;
+        min-height: 100vh;
+        h1{
+            font-family: $font1;
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        p{
+            font-weight: 0;
+            font-style: italic;
+            font-size: 1.4rem;
+            margin: 50px auto;
+        }
+    }
+}

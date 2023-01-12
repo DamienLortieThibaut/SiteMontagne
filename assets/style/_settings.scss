@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+    font-family: "MerryweatherLight";
+    src: url("../fonts/Merriweather-Light.ttf");
+}
+
+$font1: "Inter", sans-serif;
+$font2: "MerryweatherLight", sans-serif;
+$color1: rgb(157, 157, 157);
+$color2: rgb(249, 249, 249);
+$color3: rgb(40, 40, 40);
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/bg.jpg") center/cover fixed;
+    font-family: $font2;
+}
