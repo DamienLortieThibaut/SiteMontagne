@@ -1,0 +1,87 @@
+.first-section{
+    height: 1445px;
+    background: white;
+    margin: 0 5%;
+    .container-first-section {
+        margin: 0 7.3%;
+        text-align: center;
+        p:first-child{
+            position: relative;
+            font-weight: normal;
+            font-size: 1.3rem;
+            padding: 90px 0;
+            &::before{
+                content: "";
+                position: absolute;
+                background: $color1;
+                height: 2px;
+                width: 40%;
+                left: 10px;
+                bottom: 50%;
+                opacity: 0.2;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background: $color1;
+                height: 2px;
+                width: 40%;
+                right: 10px;
+                bottom: 50%;
+                opacity: 0.2;
+            }
+        }
+        h1{
+            font-family: $font1;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 3.6rem;
+            letter-spacing: 4px;
+        }
+        #paragraphe{
+            margin: 60px auto;
+            line-height: 40px;
+            width: 50%;
+            font-style: italic;
+        }
+        img{
+            height: 90%;
+            width: 90%;
+        }
+        button{
+            display: block;
+            margin: 60px auto 60px auto;
+        }
+    }
+}
+.second-section{
+    background: white;
+    margin: 0 5%;
+    border-top: 2px solid rgba(98, 98, 98, 0.098);
+    .container-second-section{
+        margin: 0 7.3%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        p{
+            padding-top: 60px;
+            margin-bottom: 30px;
+        }
+        h2{
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 4px;
+            font-family: $font1;
+        }
+        img{
+            width: 80%;
+            height: 400px;
+        }
+        .left-part-second-section{
+            border-right: 2px solid rgba(98, 98, 98, 0.098);
+        }
+        button{
+            margin-bottom: 60px;
+        }
+    }
+}

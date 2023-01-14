@@ -19,6 +19,10 @@ $color3: rgb(40, 40, 40);
     justify-content: center;
     align-items: center;
 }
+a,a:visited{
+    color: $color2;
+    text-decoration: none;
+}
 
 *{
     margin: 0;
@@ -26,7 +30,38 @@ $color3: rgb(40, 40, 40);
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: url("../img/bg.jpg") center/cover fixed;
     font-family: $font2;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.button{
+    padding: 18px 40px;
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: $font1;
+    font-size: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        background: $color3;
+        color: $color2;
+    }
+}
+
+.title{
+    color: rgb(122, 118, 118);
+    font-weight: bold;
+    font-family: $font1;
+    text-transform: uppercase;
 }

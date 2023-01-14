@@ -15,10 +15,71 @@ header{
             letter-spacing: 3px;
         }
         p{
-            font-weight: 0;
+            font-weight: none;
             font-style: italic;
             font-size: 1.4rem;
             margin: 50px auto;
+        }
+        i{
+            border: 2px solid $color2;
+            font-size: 1.4rem;
+            padding: 25px 27px;
+            border-radius: 100px;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    nav{
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        flex-direction: row;
+        background: rgba(238, 238, 238, 0.187);
+        height: 80px;
+        .main-menu{
+            &:hover li:not(:hover) {
+                background: none;
+                color: $color2;
+            }
+            display: flex;
+            li {
+                min-width: 200px;
+                width: 100%;
+                text-transform: uppercase;
+                @include center;
+                font-weight: bold;
+                transition: 0.3s;
+                &:first-child{
+                    background: $color2;
+                    color: $color3;
+                    font-weight: 600;
+                }
+                &:hover{
+                    background: $color2;
+                    color: $color3;
+                    font-weight: 600;
+                }
+            }
+        }
+        .reseau-menu{
+            display: flex;
+            li{
+                @include center;
+                min-width: 100px;
+                i{
+                    font-size: 1.4rem;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
         }
     }
 }
