@@ -41,6 +41,12 @@ ul {
   transition: 0.3s;
   cursor: pointer;
 }
+@media screen and (max-width: 750px) {
+  .button {
+    font-size: 0.8rem;
+    padding: 14px 31px;
+  }
+}
 .button:hover {
   background: rgb(40, 40, 40);
   color: rgb(249, 249, 249);
@@ -73,11 +79,26 @@ header .container h1 {
   font-weight: bold;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 865px) {
+  header .container h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .container h1 {
+    font-size: 3.7rem;
+  }
+}
 header .container p {
   font-weight: none;
   font-style: italic;
   font-size: 1.4rem;
   margin: 50px auto;
+}
+@media screen and (max-width: 865px) {
+  header .container p {
+    font-size: 1rem;
+  }
 }
 header .container i {
   border: 2px solid rgb(249, 249, 249);
@@ -108,15 +129,29 @@ header nav .main-menu:hover li:not(:hover) {
   background: none;
   color: rgb(249, 249, 249);
 }
+@media screen and (max-width: 1120px) {
+  header nav .main-menu {
+    width: 100%;
+  }
+}
 header nav .main-menu li {
-  min-width: 200px;
-  width: 100%;
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 200px;
+  width: 100%;
+  text-transform: uppercase;
   font-weight: bold;
   transition: 0.3s;
+}
+@media screen and (max-width: 680px) {
+  header nav .main-menu li {
+    min-width: 110px;
+  }
+  header nav .main-menu li p {
+    font-size: 0.7rem;
+    margin: 0 30px;
+  }
 }
 header nav .main-menu li:first-child {
   background: rgb(249, 249, 249);
@@ -130,6 +165,11 @@ header nav .main-menu li:hover {
 }
 header nav .reseau-menu {
   display: flex;
+}
+@media screen and (max-width: 1120px) {
+  header nav .reseau-menu {
+    display: none;
+  }
 }
 header nav .reseau-menu li {
   display: flex;
@@ -146,7 +186,7 @@ header nav .reseau-menu li i:hover {
 }
 
 .first-section {
-  height: 1445px;
+  padding-bottom: 40px;
   background: white;
   margin: 0 5%;
 }
@@ -170,6 +210,21 @@ header nav .reseau-menu li i:hover {
   bottom: 50%;
   opacity: 0.2;
 }
+@media screen and (max-width: 1100px) {
+  .first-section .container-first-section p:first-child::before {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .first-section .container-first-section p:first-child::before {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .first-section .container-first-section p:first-child::before {
+    width: 20%;
+  }
+}
 .first-section .container-first-section p:first-child::after {
   content: "";
   position: absolute;
@@ -180,6 +235,21 @@ header nav .reseau-menu li i:hover {
   bottom: 50%;
   opacity: 0.2;
 }
+@media screen and (max-width: 1100px) {
+  .first-section .container-first-section p:first-child::after {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .first-section .container-first-section p:first-child::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .first-section .container-first-section p:first-child::after {
+    width: 20%;
+  }
+}
 .first-section .container-first-section h1 {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
@@ -187,11 +257,26 @@ header nav .reseau-menu li i:hover {
   font-size: 3.6rem;
   letter-spacing: 4px;
 }
+@media screen and (max-width: 865px) {
+  .first-section .container-first-section h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .first-section .container-first-section h1 {
+    font-size: 2.5rem;
+  }
+}
 .first-section .container-first-section #paragraphe {
   margin: 60px auto;
   line-height: 40px;
   width: 50%;
   font-style: italic;
+}
+@media screen and (max-width: 520px) {
+  .first-section .container-first-section #paragraphe {
+    font-size: 0.8rem;
+  }
 }
 .first-section .container-first-section img {
   height: 90%;
@@ -199,7 +284,7 @@ header nav .reseau-menu li i:hover {
 }
 .first-section .container-first-section button {
   display: block;
-  margin: 60px auto 60px auto;
+  margin: 60px auto 0 auto;
 }
 
 .second-section {
@@ -214,7 +299,7 @@ header nav .reseau-menu li i:hover {
   flex-direction: row;
 }
 .second-section .container-second-section p {
-  padding-top: 60px;
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 .second-section .container-second-section h2 {
@@ -223,15 +308,45 @@ header nav .reseau-menu li i:hover {
   letter-spacing: 4px;
   font-family: "Inter", sans-serif;
 }
+@media screen and (max-width: 745px) {
+  .second-section .container-second-section h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 635px) {
+  .second-section .container-second-section h2 {
+    font-size: 1rem;
+  }
+}
 .second-section .container-second-section img {
   width: 80%;
   height: 400px;
 }
+@media screen and (max-width: 1040px) {
+  .second-section .container-second-section img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .second-section .container-second-section img {
+    height: 250px;
+  }
+}
 .second-section .container-second-section .left-part-second-section {
   border-right: 2px solid rgba(98, 98, 98, 0.098);
 }
+@media screen and (max-width: 595px) {
+  .second-section .container-second-section .left-part-second-section {
+    border: none;
+  }
+}
 .second-section .container-second-section button {
   margin-bottom: 60px;
+}
+@media screen and (max-width: 595px) {
+  .second-section .container-second-section {
+    display: block;
+  }
 }
 
 .contact {
@@ -245,6 +360,11 @@ header nav .reseau-menu li i:hover {
   width: 85%;
   margin: 0 15%;
 }
+@media screen and (max-width: 750px) {
+  .contact .form-container {
+    padding-top: 20px;
+  }
+}
 .contact .form-container label {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -255,6 +375,11 @@ header nav .reseau-menu li i:hover {
 }
 .contact .form-container label:first-child {
   margin-top: 40px;
+}
+@media screen and (max-width: 750px) {
+  .contact .form-container label {
+    font-size: 0.8rem;
+  }
 }
 .contact .form-container input {
   display: block;
@@ -275,14 +400,54 @@ header nav .reseau-menu li i:hover {
   color: rgb(57, 57, 57);
 }
 .contact .right-part-contact {
-  width: 50%;
-  margin: 0 7.3%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .contact .right-part-contact .container-contact {
-  display: flex;
-  justify-content: space-between;
+  padding: 0 7.3%;
+  display: grid;
+  grid-template-columns: 30% 70%;
   align-items: center;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  height: 100%;
+}
+@media screen and (max-width: 750px) {
+  .contact .right-part-contact .container-contact {
+    height: 75px;
+    border-bottom: none;
+    border-top: 1px solid rgb(197, 197, 197);
+  }
+}
+.contact .right-part-contact .container-contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .right-part-contact .container-contact ul li {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 50px;
+  padding: 15px;
+}
+.contact .right-part-contact .container-contact ul li i {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  .contact .right-part-contact .container-contact ul li i {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact .right-part-contact .container-contact ul li {
+    padding: 9px 10px;
+  }
+}
+.contact .right-part-contact .container-contact:last-child {
+  border-bottom: none;
+}
+@media screen and (max-width: 750px) {
+  .contact {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

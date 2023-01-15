@@ -13,12 +13,21 @@ header{
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 3px;
+            @media screen and (max-width: 865px) {
+                font-size: 4rem;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 3.7rem;
+            }
         }
         p{
             font-weight: none;
             font-style: italic;
             font-size: 1.4rem;
             margin: 50px auto;
+            @media screen and (max-width: 865px) {
+                font-size: 1rem;
+            }
         }
         i{
             border: 2px solid $color2;
@@ -48,13 +57,23 @@ header{
                 color: $color2;
             }
             display: flex;
+            @media screen and (max-width: 1120px){
+                width: 100%;
+            }
             li {
+                @include center;
                 min-width: 200px;
                 width: 100%;
                 text-transform: uppercase;
-                @include center;
                 font-weight: bold;
                 transition: 0.3s;
+                @media screen and (max-width: 680px){
+                    min-width: 110px;
+                    p{
+                        font-size: 0.7rem;
+                        margin: 0 30px;
+                    }
+                }
                 &:first-child{
                     background: $color2;
                     color: $color3;
@@ -69,6 +88,9 @@ header{
         }
         .reseau-menu{
             display: flex;
+            @media screen and (max-width: 1120px){
+                display: none;
+            }
             li{
                 @include center;
                 min-width: 100px;

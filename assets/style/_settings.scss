@@ -53,6 +53,10 @@ ul{
     font-size: 1rem;
     transition: 0.3s;
     cursor: pointer;
+    @media screen and (max-width: 750px){
+        font-size: 0.8rem;
+        padding: 14px 31px;
+    }
     &:hover{
         background: $color3;
         color: $color2;
